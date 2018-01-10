@@ -30,7 +30,7 @@
 
 ## API documentation
 
-Domain: `https://northcoders-sprints-api.now.sh/api/twitter`
+Domain: [https://northcoders-sprints-api.now.sh/api/twitter](https://northcoders-sprints-api.now.sh/api/twitter)
 
 ### Status
 `GET /`
