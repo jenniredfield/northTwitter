@@ -1,0 +1,102 @@
+
+.grid {
+    width: 85%;
+    margin: 20px auto;
+    /* border: 1px solid lightgray; */
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-column-gap: 10px;
+}
+
+.grid  > div {
+
+
+
+}
+
+.grid-2 {
+    border: 1px solid black;
+}
+
+.userProfile {
+
+    min-height: 200px;
+    color: #77848B;
+    background: white;
+}
+
+.userProfile-Banner {
+    position: relative;
+} 
+
+.userProfile-Banner > img
+
+{
+
+    border: 1px solid black;
+    width: 100%;
+
+}
+
+#user-ul {
+
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+
+}
+
+.userName {
+
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    color: black;
+}
+
+.userName p {
+    margin: 0;
+}
+
+#user-ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* background: green; */
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    width: 33%;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.user-counts {
+    color: #48A0EC;
+    font-weight: 700;
+    font-size: 1.5em !important;
+}
+
+.userProfile-Details {
+    position: relative;
+
+}
+
+.user-logo {
+
+   width: 4em; 
+   border-radius: 100px;
+   position: absolute;
+   left: 20px;
+   bottom: 40px;
+   
+}
+
+.screenName {
+
+    font-size: 10px;
+    color: #77848B;
+}

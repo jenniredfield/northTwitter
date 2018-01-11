@@ -1,23 +1,30 @@
 import React from 'react';
-import './nav.css';
+import './user.css';
 import PropTypes from 'prop-types';
 
 const User = ({user}) => (
-    <ul>
-        <li><i class="fa fa-home" aria-hidden="true"></i>Home</li>
-        <li><i class="fa fa-bolt" aria-hidden="true"></i>Moments</li>
-        <li><i class="fa fa-bell-o" aria-hidden="true"></i>Notifications</li>
-        <li><i class="fa fa-envelope-o" aria-hidden="true"></i>Messages</li>
-        <li><img src="Twitter_Bird.png" alt="twitterbird"/></li>
-        <li><input placeholder="Search"></input></li>
-        <li>Profile</li>
-        <li>Tweet</li>
-    </ul>
+    
+    <div className="userProfile">
+                 <div className="userProfile-Banner">
+                        <img src={user.profile_banner_url} alt="banner"/>
+                </div>
+                <div className="userProfile-Details">
+                         <img src={user.profile_image_url} alt="banner" className="user-logo"/>
+                         <div className="userName">
+                            <p >{user.name}</p>
+                            <p className="screenName">@{user.screen_name}</p>
+                         </div>
+                        <div className="userProfile-tweet-count">
+                            <ul id="user-ul">
+                                <li>Tweets<span className="user-counts">{user.statuses_count}</span></li>
+                                <li>Following <span className="user-counts">{user.friends_count}</span></li>
+                                <li>Followers<span className="user-counts">{user.followers_count}</span></li>
+                            </ul>
+                        </div>
+                </div>
+        </div>
     
 );
 
-Nav.propTypes = {
-  nav: PropTypes.array.isRequired
-};
 
-export default Nav;
+export default User;

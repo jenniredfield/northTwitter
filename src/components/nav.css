@@ -8,7 +8,7 @@
     /* background: #E6ECF0; */
  }
 
-ul {
+#nav-ul {
 
     list-style: none;
     padding: 0 60px;
@@ -22,46 +22,46 @@ ul {
     
 }
 
-ul li img {
+#nav-ul  li img {
 
     width: 20px;
     height: 15px;
 
 }
 
-ul li {
+#nav-ul li {
 
      
         margin: 8px 10px;
         padding: 0px 20px;
         color: #77848C;
-        
+        display: flex;
 }
 
-li > * {
+#nav-ul li > * {
 
     display: flex;
 }
 
-ul li i {
+#nav-ul li i {
 
     margin-right: 5px;
 }
 
-ul li:nth-child(5){
+#nav-ul ul li:nth-child(5){
 
     margin-right: auto;
     margin-left: auto;
 }
 
-ul li:nth-child(7){
+#nav-ul ul li:nth-child(7){
 
    margin-left: 0;
    padding-left: 0;
 }
 
 
-ul li:last-child {
+#nav-ul ul li:last-child {
 
     background: #2AA3EF;
     padding: 5px 15px;
