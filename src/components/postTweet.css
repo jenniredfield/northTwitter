@@ -1,0 +1,35 @@
+.postTweet-div {
+
+
+    width: 100%;
+    /* border: 1px solid lightgrey; */
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    background: #E9F5FD;
+}
+
+
+
+#postInput {
+
+    width: 100%;
+    /* padding: 20px; */
+    border-radius: 5px;
+    background: white;
+    border: 1px solid #C7E7FA
+}
+
+.user-logo-input {
+    border-radius: 100px;
+    width: 40px;
+    margin: 0 auto;
+}
+
+.tweet-button {
+
+    border-radius: 100px;
+    padding: 10px 15px;
+    border: none;
+    background: #48A0EC;
+}
