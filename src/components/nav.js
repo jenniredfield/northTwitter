@@ -3,6 +3,7 @@ import './nav.css';
 import PropTypes from 'prop-types';
 
 const Nav = ({nav}) => (
+    <nav>
     <ul id="nav-ul">
         <li><i class="fa fa-home" aria-hidden="true"></i>Home</li>
         <li><i class="fa fa-bolt" aria-hidden="true"></i>Moments</li>
@@ -13,6 +14,7 @@ const Nav = ({nav}) => (
         <li>Profile</li>
         <li>Tweet</li>
     </ul>
+    </nav>
     
 );
 

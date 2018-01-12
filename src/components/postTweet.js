@@ -6,6 +6,7 @@ class Post extends React.Component {
 
     state = {
         userInput: "",
+        expanded: false,
     }
 
 
@@ -45,6 +46,20 @@ class Post extends React.Component {
         });
     }
 
+    inputClick = () => {
+
+        this.setState({
+            expanded: true,
+        })
+
+    }
+
+    inputNotExpanded = () => {
+        this.setState({
+            expanded: false,
+        })
+    }
+
     render () {
 
     return (
@@ -55,7 +70,7 @@ class Post extends React.Component {
                    </div>
                    <div className="grid-2-input">
 
-                       <input id="postInput" placeholder="What's happening?" onChange={this.handleChange} value={this.state.userInput}></input>
+                       <textarea placeholder="What's happening?" onClick={this.inputClick} onChange={this.handleChange} value={this.state.userInput} className={this.state.expanded ? "expanded" : "notExpanded"} onBlur={this.inputNotExpanded}/>
                        <button className="tweet-button" onClick={this.post}>Tweet</button>
 
                    </div>
