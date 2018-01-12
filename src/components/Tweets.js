@@ -1,6 +1,8 @@
 import React from 'react';
 import './tweets.css';
 import PropTypes from 'prop-types';
+import moment from 'moment'
+
 
 const Tweets = ({tweets}) => (
 
@@ -22,7 +24,7 @@ const Tweets = ({tweets}) => (
                             <div className="tweet-author">
                                 <span className="tweetAuthor">{tweet.user.name} </span>
                                 <span className="tweetAuthorScreen">@{tweet.user.screen_name} </span>
-                                <span className="timeSpan">Time</span>
+                                 <ParseTime tweet={tweet}/>
                             </div>
                             <div className="actual-tweet">
                                 <p className="p-tweet">{tweet.text}</p>
@@ -86,8 +88,22 @@ const TweetRetweet = ({tweet}) => {
              return null;
          }
 
+ }
+
+
+const ParseTime = ({tweet}) => {
+
+
+    const time = moment(tweet.created_at).fromNow();
+
+    return (
+        <span className="timeSpan">{time}</span> 
+    );
+
 
 }
+
+
 
 
 

@@ -23,8 +23,7 @@ class App extends React.Component {
   
   render() {
 
-    // console.log(this.state.userProfile)
-    // console.log(this.state.trends)
+
     console.log(this.state.tweets)
     return (
  

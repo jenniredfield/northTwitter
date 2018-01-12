@@ -12,7 +12,7 @@ const Nav = ({nav}) => (
         <li><img src="Twitter_Bird.png" alt="twitterbird"/></li>
         <li><input placeholder="Search"></input></li>
         <li>Profile</li>
-        <li>Tweet</li>
+        <li id="tweet-nav">Tweet</li>
     </ul>
     </nav>
     

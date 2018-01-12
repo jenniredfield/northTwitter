@@ -84,3 +84,12 @@ input {
 input:focus {
     outline: none;
 }
+
+#tweet-nav {
+
+    background: #48A0EC;
+    padding: 5px 10px !important;
+    border-radius: 100px;
+    font-weight: 700;
+    color: white !important;
+}

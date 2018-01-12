@@ -11,10 +11,10 @@ const Trends = ({trends}) => (
         if(trend.tweet_volume !== null){
            
             return (          
-                <div className="user-trending">
-                <p className="user-trending-name">{trend.name}</p>
-                <p className="numberTweets">{trend.tweet_volume}</p>
-            </div>
+            <a href={trend.url}><div className="user-trending">
+                    <p className="user-trending-name">{trend.name}</p>
+                    <p className="numberTweets">{trend.tweet_volume}</p>
+            </div></a>
     
         )
 
