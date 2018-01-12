@@ -33,3 +33,13 @@
     border: none;
     background: #48A0EC;
 }
+
+#postInputEx {
+    height: 100px;
+}
+
+.tweet-button {
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+}

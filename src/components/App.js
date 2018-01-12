@@ -3,7 +3,7 @@ import Nav from './nav.js';
 import User from './User.js';
 import Trends from './Trends.js';
 import Tweets from './Tweets.js';
-import PostTweet from './postTweet.js';
+import Post from './postTweet.js';
 import './app.css';
 
 class App extends React.Component {
@@ -36,7 +36,7 @@ class App extends React.Component {
                 <Trends trends={this.state.trends}/>
             </div>
             <div className="grid-2">
-                 <PostTweet user={this.state.userProfile}/>
+                <Post user={this.state.userProfile} fetchTweets={this.fetchTweets}/>
                 <Tweets tweets={this.state.tweets}/>
             </div>
             <div className="grid-3">
