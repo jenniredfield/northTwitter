@@ -2,6 +2,7 @@ import React from "react";
 import Nav from './nav.js';
 import User from './User.js';
 import Trends from './Trends.js';
+import Tweets from './Tweets.js';
 import './app.css';
 
 class App extends React.Component {
@@ -10,19 +11,22 @@ class App extends React.Component {
 
     userProfile: {},
     trends: [],
+    tweets: [],
   };
 
   componentDidMount () {
     this.fetchUser('northcoders');
     this.fetchTrends();
+    this.fetchTweets();
   }
   
   render() {
 
-    console.log(this.state.userProfile)
-    console.log(this.state.trends)
+    // console.log(this.state.userProfile)
+    // console.log(this.state.trends)
+    console.log(this.state.tweets)
     return (
-      // <body style={{backgroundColor: "lightblue"}}>
+ 
       <div className="App">
         <Nav/> 
         <div className="grid">
@@ -31,12 +35,13 @@ class App extends React.Component {
                 <Trends trends={this.state.trends}/>
             </div>
             <div className="grid-2">
+                <Tweets tweets={this.state.tweets}/>
             </div>
             <div className="grid-3">
             </div>
         </div>  
       </div>
-      // </body>
+ 
       );
   }
 
@@ -57,13 +62,24 @@ class App extends React.Component {
       .then((resBuffer) => resBuffer.json())
       .then((res) => {
         this.setState({
-          trends:  res.trends.slice(0,10),
+          trends:  res.trends,
         });
       
       })
       .catch(console.log);
   };
 
+  fetchTweets =  () => {
+    return fetch(`https://northcoders-sprints-api.now.sh/api/twitter/timeline`)
+      .then((resBuffer) => resBuffer.json())
+      .then((res) => {
+        this.setState({
+          tweets:  res.tweets,
+        });
+      
+      })
+      .catch(console.log);
+  };
 
 
 }

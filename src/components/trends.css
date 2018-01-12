@@ -1,3 +1,16 @@
 .trends-box {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    padding: 5px;
+    background: white;
+}
+
+.user-trending-name {
+
+    color: #48A0EC;
+
+}
+
+.numberTweets {
+    font-size: 10px;
+    color: #77848B;
 }

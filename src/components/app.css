@@ -8,3 +8,21 @@ body {
     font-family: Helvetica;
     
 }
+
+
+.grid {
+    width: 85%;
+    margin: 10px auto;
+    /* border: 1px solid lightgray; */
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-column-gap: 10px;
+    /* grid-row-gap: 20px; */
+}
+
+.grid-1  > div {
+
+    margin-bottom: 10px;
+
+}
+
